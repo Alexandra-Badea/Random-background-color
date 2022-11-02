@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="container" id="background">
+		<button type="button" onclick="getRandomColor()">Click me</button>
+	</div>
+
+	<script>
+
+		function getRandomColor() {
+			let r = Math.floor(Math.random() * 256);
+			let g = Math.floor(Math.random() * 256);
+			let b = Math.floor(Math.random() * 256);
+
+			let bgColor = 'rgb(' + r + ', ' + g + ', ' + b + ')';
+			console.log(bgColor);
+			document.body.style.background = bgColor;
+		}
+
+	</script>
+</body>
+
+</html>
